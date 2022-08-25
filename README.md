@@ -173,11 +173,11 @@ And, visiting the same URL with the “/code/“ subdirectory will show the file
 
 The resulting VSCode web application looks like this; a full featured IDE suitable for coding in the programming language of your choice.
 
-[... First Image ...]
+![VSCode Window](https://github.com/ksylvan/remote-coding/raw/main/img/F67431D5-AC78-458B-9C20-9702C77F3812.png)
 
 In addition, using the Terminal in VSCode, we have full access to the machine:
 
-[... Terminal Image ...]
+![VSCode Terminal](https://github.com/ksylvan/remote-coding/raw/main/img/466BF2F3-C8BB-4E82-B95D-4F0B38771B98.png)
 
 Here, we can install, for example, “rustup” for the Rust tool chain, or any other programming language, along with the required VSCode extensions.
 
