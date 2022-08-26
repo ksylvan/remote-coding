@@ -2,7 +2,7 @@
 
 Author: *Kayvan Sylvan*
 
-Updated: *8/25/2022*
+Updated: *8/26/2022*
 
 This guide walks through the step by step process of setting up a full remote development environment using Microsoft’s free VSCode code-server.
 
