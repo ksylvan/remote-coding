@@ -32,11 +32,11 @@ This setup comes to $5 per month. Press submit and wait till the server comes up
 
 ## Add Local User and Setup sudoers
 
-Login to the cloud server via ssh and set up a local user and add that user to sudoers.
+Login to the cloud server via ssh as root and set up a local user and add that user to sudoers.
 
 ```bash
 LOCAL_USER=kayvan
-# useradd $LOCAL_USER -s /bin/bash
+useradd $LOCAL_USER -s /bin/bash
 cat > /etc/sudoers.d/$LOCAL_USER << EOF
 # User rules for $LOCAL_USER
 $LOCAL_USER ALL=(ALL) NOPASSWD:ALL
