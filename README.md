@@ -216,6 +216,14 @@ The following set of extensions are recommended for Rust development:
 - CodeLLB - for debugging
 - markdownlint
 
+NOTE: For TabNine to work, you need to port-forward the following ports on your local machine to the remote
+dev server. On the iPad, you can [use WebSSH to accomplish this](https://webssh.net/documentation/help/networking/port-forwarding/).
+
+```text
+5555:localhost:5555
+49152:localhost:49152
+```
+
 ## References
 
 - [Setting up Tailscale on Linux](https://tailscale.com/kb/1031/install-linux/)
