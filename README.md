@@ -2,7 +2,7 @@
 
 Author: *Kayvan Sylvan*
 
-Updated: *8/26/2022*
+Updated: *8/29/2022*
 
 This guide walks through the step by step process of setting up a full remote development environment using Microsoft’s free VSCode code-server.
 
@@ -210,10 +210,10 @@ The following set of extensions are recommended for Rust development:
 - rust-analyzer
 - tabnine - AI auto-complete
 - Better TOML - For Cargo.toml support
-- Search crates.io - crates suggestions
 - Better Comments
 - Crates
 - CodeLLB - for debugging
+- Error Lens
 - markdownlint
 
 NOTE: For TabNine to work, you need to port-forward the following ports on your local machine to the remote
