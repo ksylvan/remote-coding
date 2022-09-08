@@ -2,7 +2,7 @@
 
 Author: *Kayvan Sylvan*
 
-Updated: *8/29/2022*
+Updated: *9/8/2022*
 
 This guide walks through the step by step process of setting up a full remote development environment using Microsoft’s free VSCode code-server.
 
@@ -36,7 +36,7 @@ Login to the cloud server via ssh as root and set up a local user and add that u
 
 ```bash
 LOCAL_USER=kayvan
-useradd $LOCAL_USER -s /bin/bash
+useradd $LOCAL_USER -s /bin/bash -m 
 cat > /etc/sudoers.d/$LOCAL_USER << EOF
 # User rules for $LOCAL_USER
 $LOCAL_USER ALL=(ALL) NOPASSWD:ALL
