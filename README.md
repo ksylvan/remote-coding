@@ -2,7 +2,7 @@
 
 Author: *Kayvan Sylvan*
 
-Updated: *9/8/2022*
+Updated: *10/4/2022*
 
 This guide walks through the step by step process of setting up a full remote development environment using Microsoft’s free VSCode code-server.
 
@@ -221,8 +221,31 @@ dev server. On the iPad, you can [use WebSSH to accomplish this](https://webssh.
 
 ```text
 5555:localhost:5555
-49152:localhost:49152
 ```
+
+## A Note on using TabNine and VSCode Web
+
+There are a few issues with TabNine and VSCode Web that are not completely resolved.
+
+See <https://github.com/coder/code-server/issues/4762> and <https://github.com/coder/code-server/issues/1936>
+
+To get around this, you have to go to the TabNine extension settings page and set the following parameters:
+
+```text
+TabNine Log Path: /tmp/tabnine.log
+TabNine Log Level: DEBUG
+```
+
+Then, restart TabNine and look for the Hub site in the resulting log file:
+
+```bash
+$ grep 5555 /tmp/tabnine_rCURRENT.log-74967
+INFO [ui::http_server] [2022-10-04:19:21:26 TabNine INFO] Started config server at 127.0.0.1:5555.
+INFO [frontend::initialize] [2022-10-04:19:21:26 TabNine INFO] Hub site is: http://127.0.0.1:5555/sec-qtjxyzqkrorcgtlai
+```
+
+Now, browse to the hub site (it will look like the above example), and click on the "Sign in" button. After that,
+your TabNine session will be logged in automatically when you load VSCode Web.
 
 ## References
 
