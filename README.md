@@ -244,8 +244,10 @@ INFO [ui::http_server] [2022-10-04:19:21:26 TabNine INFO] Started config server 
 INFO [frontend::initialize] [2022-10-04:19:21:26 TabNine INFO] Hub site is: http://127.0.0.1:5555/sec-qtjxyzqkrorcgtlai
 ```
 
-Now, browse to the hub site (it will look like the above example), and click on the "Sign in" button. After that,
-your TabNine session will be logged in automatically when you load VSCode Web.
+Now, browse to the hub site in another browser window using this URL:
+<http://localhost:5555/welcome?tabnineUrl=%2Fsec-qtjxyzqkrorcgtlai> (copy and paste the API string from the log)
+and now click on the "Sign in" button. After that, your TabNine session will be logged in automatically when
+you load VSCode Web.
 
 ## References
 
