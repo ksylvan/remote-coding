@@ -217,7 +217,8 @@ The following set of extensions are recommended for Rust development:
 - markdownlint
 
 NOTE: For TabNine to work, you need to port-forward the following ports on your local machine to the remote
-dev server. On the iPad, you can [use WebSSH to accomplish this](https://webssh.net/documentation/help/networking/port-forwarding/).
+dev server. On the iPad, you can [use the Termius SSH app to accomplish this](https://support.termius.com/hc/en-us/articles/4402386576793-Port-forwarding).
+You'll also need to use the [location tracking feature of Termius](https://support.termius.com/hc/en-us/articles/900006226306-I-can-t-use-the-iOS-app-in-the-background) to ensure the port-forward connection remains active in the background.
 
 ```text
 5555:localhost:5555
