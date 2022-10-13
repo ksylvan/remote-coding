@@ -2,7 +2,7 @@
 
 Author: *Kayvan Sylvan*
 
-Updated: *10/9/2022*
+Updated: *10/13/2022*
 
 This guide walks through the step by step process of setting up a full remote development environment using Microsoft’s free VSCode code-server.
 
@@ -80,6 +80,15 @@ tailscale ip -4
 ```
 
 ## Install code-server
+
+Install node.js version 16 on the server:
+
+```bash
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt -y install nodejs
+```
+
+Now install code-server:
 
 ```bash
 curl -fsSL https://code-server.dev/install.sh | sh
