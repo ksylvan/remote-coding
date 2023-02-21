@@ -2,7 +2,7 @@
 
 Author: *Kayvan Sylvan*
 
-Updated: *1/19/2023*
+Updated: *2/21/2023*
 
 This guide walks through the step by step process of setting up a full remote development environment using Microsoft’s free VSCode code-server.
 
@@ -257,8 +257,8 @@ INFO [frontend::initialize] [2022-10-04:19:21:26 TabNine INFO] Hub site is: http
 ```
 
 Now, browse to the hub site in another browser window using the URL from the log file:
-<http://127.0.0.1:1134/sec-qtjxyzqkrorcgtlai?tabnineUrl=%2Fsec-qtjxyzqkrorcgtlai> (copy and paste the API string from the log to
-add the `tabnineUrl` parameter) and now click on the "Sign in" button if it shows up.
+<http://127.0.0.1:1134/sec-qtjxyzqkrorcgtlai> and now click on the "Sign in"
+button if it shows up.
 
 After that, your TabNine session will be logged in automatically when you load VSCode Web.
 
